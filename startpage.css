@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Goldman&display=swap');
+ 
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* { 
+	padding: 0;
+	margin: 0;
+	Box-sizing: border-box;
 }
 
 body {
@@ -17,261 +18,214 @@ body {
     overflow: hidden;
 }
 
-.Logo img{
-    margin:50px;
-    width: 997px;
-}
-
-.game-selection-container{
+.logo{
     width:100%;
-    margin-bottom: 50px;
-    margin-left: 200px;
 }
 
-.select-one-mode {
-    align-items: center;
+.logo img{
+    margin:20px 0 0 20px;
+    width:50%;
+    min-width:300px;
+}
+
+.container{
+    margin-top:30px;
+    width:100%;
+    padding:0px 8%;
+}
+
+.select-mode{
     display: flex;
-    flex-direction: row;
-    min-width: 500px;
+    justify-content:flex-start;
+    flex-basis: 60%;
 }
 
-.game-selection-box {
-    margin:0px 0px 50px 50px;
-    width: 300px;
+.mode-container{
+    margin-right: 10%;
+    width: 20%;
     background: #645EFE;
     border-radius: 20px;
-    padding:10px;
+    min-width:150px;
     cursor: pointer;
 }
 
-.game-selection-box:hover {
-    background: rgba(100, 94, 254, 0.4);
-    mix-blend-mode: normal;
-    border:1px white solid;
+.mode-container:hover{
+    background: rgba(191, 189, 253, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
 }
 
-
-
-.img-container{
-    width:100%;
-    height: 180px;
+.mode-container img{
+    width: 100%;
+    height:70%;
 }
 
-
-.game-selection-box img {
-    align-content: center;
-    width:100%;
-    height:100%;
-}
-
-
-.game-selection-box p{
-    margin-top:20px;
-
+.mode-container p{
+    margin-top:10px;
+    text-align: center;
     font-family: 'Goldman';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 48px;
-    text-align: center;
-    /* identical to box height */
     color: #FFFFFF;
 }
 
-.topic-category {
-    margin: -50px 250px;
+.category-container{
+    margin: 50px 0 0 0;
+    width:80%;
+    position:relative;
 }
 
-.topic-category h2 {
-    font-family: 'Goldman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    /* identical to box height */
+.category-container h2{
 
-    color: #FFFFFF;
+font-family: 'Goldman';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
 
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    display: flex;
-    margin-bottom: 10px;
+color: #FFFFFF;
+text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.topic-category {
-    width: 600px;
-    height: 229px;
+
+.category-container .button-container{
+    width:100%;
+    margin-top: 20px;
 }
 
-button.topic-select {
-    width: 30%;
-    padding: 7px;
-
+.button-container button{
     background: rgba(100, 94, 254, 0.5);
-    border:0;
     border-radius: 10px;
-    margin:5px;
+    border:none;
+    font-size: 30px;
+    padding:1%;
+    margin:10px;
 
     font-family: 'Comic Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 35px;
+    cursor: pointer;
     color: #FFFFFF;
-    cursor:pointer;
 }
 
-button.topic-select:hover{
-    background: rgba(100, 94, 254, 0.4);
-    mix-blend-mode: normal;
-    border:1px white solid;
+.button-container button:hover{
+    background: rgba(191, 189, 253, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
 }
 
 
-
-
-
-button.start-game-button {
+.start-game-btn{
     position: absolute;
-    right:100px;
-
-    width: 218px;
-    padding:10px;
-
-    
+    right:200px;
     background: rgba(191, 189, 253, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     /* Note: backdrop-filter has minimal browser support */
-    border:0;
+    border:none;
     border-radius: 10px;
+    height: 70px;
+    width: 200px;
+
 
     font-family: 'Goldman';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 36px;
-    /* identical to box height */
+    /* line-height: 36px;
+    identical to box height */
 
-    color: #FFFFFF;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 
-button.start-game-button:hover {
-    border:0;
-    background: rgba(8, 0, 255, 0.5);
+.start-game-btn:hover{
+    border: 2px solid white;
+    transition: 0.5s;
+    color: #645EFE;
 }
 
+@media only screen and (max-width:1024px){
 
-@media only screen and (max-width: 1150px){
-    button.start-game-button {
-        position: absolute;
-        right:100px;
-        bottom: 20px;
-    }
-}
 
-@media only screen and (max-width: 1024px){
-    .Logo img{
-        width:auto;
+    .mode-container p{
+        font-size: 20px;
     }
 
-    .game-selection-container{
-        width:100%;
-        margin-bottom: 50px;
-        margin-left:0px;
-    }
 
-    .game-selection-box {
-        width:250px;
+    .category-container h2{
+
+        font-family: 'Goldman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
         
-    }
+        color: #FFFFFF;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
 
-    .game-selection-box p{
-        margin-top:0px;
-        font-size: 25px;
-    }
 
-    .topic-category {
-        margin: -50px 50px;
-    }
-    
-    .topic-category h2 {
-        font-size: 30px;
-    }
-    
-    
-    button.topic-select {
-        width: 30%;
-        margin:5px;
-        font-size: 17px;
-    }
+        .button-container button{
 
-    .choose-category {
-        width: 90%;
-    }
-    
-    
-    button.start-game-button {
-        position: absolute;
-        right:100px;
-        bottom:50px;
+            font-size: 20px;
+            padding:1%;
+            margin:10px;
+
+   
+        }
+
+    .start-game-btn{
+        height: 50px;
         width: 170px;
-        padding:10px;
-        font-size: 20px;
-    }
+        font-size: 25px;
+  
 
+    }
+    
 }
 
 
-@media only screen and (max-width: 425px){
-    .Logo img{
-        width:auto;
+@media only screen and (max-width:425px){
+
+
+    .mode-container p{
+        font-size: 15px;
     }
 
-    .game-selection-container{
-        width:100%;
-        margin-bottom: 50px;
-        margin-left: 0px;
-    }
 
-    .game-selection-box {
-        width:150px;
-    }
+    .category-container h2{
 
-    .game-selection-box p{
-        margin-top:0px;
+        font-family: 'Goldman';
+        font-style: normal;
+        font-weight: 400;
         font-size: 25px;
-    }
+        
+        color: #FFFFFF;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
 
-    .topic-category {
-        margin: -50px 50px;
-    }
-    
-    .topic-category h2 {
-        font-size: 30px;
-    }
-    
-    
-    button.topic-select {
-        width: 30%;
-        margin:5px;
-        font-size: 17px;
-    }
 
-    .choose-category {
-        width: 90%;
-    }
-    
-    
-    button.start-game-button {
-        position: absolute;
-        right:100px;
-        bottom:50px;
+        .button-container button{
+
+            font-size: 15px;
+            padding:1%;
+            margin:10px;
+
+   
+        }
+
+    .start-game-btn{
+        right:20px;
+        height: 50px;
         width: 170px;
-        padding:10px;
-        font-size: 20px;
+        font-size: 25px;
+  
+
     }
+    
 }
 
 

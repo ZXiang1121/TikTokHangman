@@ -1,49 +1,50 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="startpage.css">
-    <title>Hangman Game</title>
+    <title>Start Page</title>
 </head>
 <body>
-    <div class="Logo">
+    <div class="logo">
         <img src="Images\Logo-Inline.png" alt="">
     </div>
 
-    <div class="game-selection-container">
-        <div class="select-one-mode">
-            <div class="game-selection-box">
-                <div class="img-container">
-                    <img src="Images\SoloGame.png" alt="">
-                </div>
-                    <p>Single Player</p>
+    <div class="container">
+
+        <div class="select-mode">
+
+            <div class="mode-container">
+                <img src="Images\SoloGame.png" alt="">
+                <p>SinglePlayer</p>
             </div>
 
-            <div class="game-selection-box">
-                <div class="img-container">
-                    <img src="Images\MultiplayerGame.png" alt="">
-                </div>
-                <p>Multi-Player</p>
+            <div class="mode-container">
+                <img src="Images\MultiplayerGame.png" alt="">
+                <p>Multiplayer</p>
+            </div>
+
+        </div>
+
+        <div class="category-container">
+            <h2>Categories</h2>
+            <div class="button-container">
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
+                <button class="select-topic">Animals</button>
             </div>
         </div>
-    </div>
 
-    <div class="topic-category">
-        <h2>Categories</h2>
-        <div class="choose-category">
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-            <button class="topic-select">Animals</button>
-        </div>
-    </div>
-    <button class="start-game-button" onclick="document.location='lastpage.html'">Start Game</button>
+        <button class="start-game-btn">Start Game</button>
 
+    </div>
 </body>
 </html>
