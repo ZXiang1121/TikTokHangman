@@ -41,6 +41,7 @@ body {
 }
 
 .mode-container{
+    padding:10px;
     margin-right: 10%;
     width: 20%;
     background: #645EFE;
