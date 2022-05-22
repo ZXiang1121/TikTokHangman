@@ -17,21 +17,39 @@
 
         <div class="select-mode">
 
-            <div class="mode-container" onclick="clickMode()">
-                <img src="Images\SoloGame.png" alt="">
-                <p>SinglePlayer</p>
-            </div>
+            <label class="labelled">
+                <input type="radio" name="target">
+                    <div class="mode-container">
+                        <img id="img1" src="Images\SoloGame.png" alt="">
+                        <p>SinglePlayer</p>
+                    </div>
+                </input>
+            </label>
 
-            <div class="mode-container">
-                <img src="Images\MultiplayerGame.png" alt="" onclick="clickMode()">
-                <p>Multiplayer</p>
-            </div>
+            <label class="labelled">
+                <input type="radio" name="target">
+                    <div class="mode-container">
+                        <img id="img2" src="Images\MultiplayerGame.png" alt="">
+                        <p>Multiplayer</p>
+                    </div>
+                </input>
+            </label>
 
         </div>
 
         <div class="category-container">
             <h2>Categories</h2>
-            <div class="button-container">
+            <select name="chooseCategory" id="chooseCategory">
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+                <option value="">Animals</option>
+            </select>
+            <!-- <div class="button-container">
                 <button class="select-topic">Animals</button>
                 <button class="select-topic">Animals</button>
                 <button class="select-topic">Animals</button>
@@ -41,7 +59,7 @@
                 <button class="select-topic">Animals</button>
                 <button class="select-topic">Animals</button>
                 <button class="select-topic">Animals</button>
-            </div>
+            </div> -->
         </div>
 
         <button class="start-game-btn">Start Game</button>
