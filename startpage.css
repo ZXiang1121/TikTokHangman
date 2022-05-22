@@ -127,9 +127,7 @@ button.topic-select:hover{
 }
 
 
-.choose-category {
-    width: ;
-}
+
 
 
 button.start-game-button {
@@ -234,7 +232,7 @@ button.start-game-button:hover {
     .game-selection-container{
         width:100%;
         margin-bottom: 50px;
-        margin-left:0px;
+        margin-left: 0px;
     }
 
     .game-selection-box {
