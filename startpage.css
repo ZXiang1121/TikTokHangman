@@ -6,6 +6,7 @@
 	padding: 0;
 	margin: 0;
 	Box-sizing: border-box;
+    font-family: "Goldman";
 }
 
 body {
@@ -15,31 +16,32 @@ body {
     /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ / */
     -webkit-background-size: cover; /*/ for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 / */
     -moz-background-size: cover; /*/ optional for Firefox 3.6 / */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .logo{
-    width:100%;
+    width: 100%;
+    display:flex;
 }
 
 .logo img{
-    margin:20px 0 0 20px;
-    width:50%;
-    min-width:400px;
+    width: 60%;
 }
-
 
 .container{
-    margin-top:30px;
     width:100%;
-    padding:0px 8%;
+    min-height: 100vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-direction: column;
 }
+
 
 .select-mode{
     display:flex;
-    justify-content:flex-start;
-    gap:30px;
-    flex-basis: 60%;
+    gap: 10%;
 }
 
 .labelled{
@@ -50,31 +52,23 @@ body {
     display: none;
 }
 
+
 .select-mode input:checked + .mode-container{
     background: rgba(191, 189, 253, 0.5);
 }
 
+
+
 .mode-container{
     padding:10px;
     margin-right: 10%;
-    width: 300px;
+    width: 100%;
     background: #645EFE;
     border-radius: 20px;
     min-width:150px;
+    max-width: 400px;
+    /* width:300px; */
     cursor: pointer;
-}
-
-.mode-container:hover{
-    background: rgba(191, 189, 253, 0.5);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-}
-
-
-
-.mode-container img{
-    width: 100%;
-    height:150px;
 }
 
 .mode-container p{
@@ -87,14 +81,22 @@ body {
     color: #FFFFFF;
 }
 
-.category-container{
-    margin: 50px 0 0 0;
-    width:80%;
-    position:relative;
+
+
+.mode-container img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
 }
 
-.category-container h2{
+.mode-container:hover{
+    background: rgba(191, 189, 253, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+}
 
+
+.category-container h2{
     font-family: 'Goldman';
     font-style: normal;
     font-weight: 400;
@@ -123,50 +125,24 @@ body {
     font-family:'Goldman';
     color:#645EFE;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-/* .button-container button{
-    background: rgba(100, 94, 254, 0.5);
-    border-radius: 10px;
-    border:none;
-    font-size: 30px;
-    padding:1%;
-    margin:10px;
 
-    font-family: 'Comic Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-    cursor: pointer;
-    color: #FFFFFF;
-} */
-
-/* .button-container button:hover{
-    background: rgba(191, 189, 253, 0.5);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-} */
 
 .start-game-btn{
-    position: absolute;
-    right:200px;
     background: rgba(191, 189, 253, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     /* Note: backdrop-filter has minimal browser support */
     border:none;
     border-radius: 10px;
-    height: 70px;
-    width: 200px;
-
 
     font-family: 'Goldman';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    /* line-height: 36px;
-    identical to box height */
+    padding:10px;
 
     cursor: pointer;
     color: #FFFFFF;
@@ -179,8 +155,30 @@ body {
     color: #645EFE;
 }
 
-@media only screen and (max-width:1024px){
 
+
+@media only screen and (max-width:1300px){
+    
+    .logo img{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width:1024px){
+    
+    .container{
+        padding: 0 5%;
+    }
+
+    .logo img{
+        
+    }
+
+    .mode-container img{
+        height:150px;
+    }
 
     .mode-container p{
         font-size: 20px;
@@ -199,69 +197,23 @@ body {
         }
 
 
-        .button-container button{
+    .button-container button{
 
-            font-size: 20px;
-            padding:1%;
-            margin:10px;
-
-   
-        }
-
-    .start-game-btn{
-        height: 50px;
-        width: 170px;
-        font-size: 25px;
-  
-    }
-    
-}
-
-@media only screen and (max-width:700px){
-    .mode-container{
-        padding:10px;
-        margin-right: 10%;
-        width: 200px;
-        background: #645EFE;
-        border-radius: 20px;
-        min-width:150px;
-        cursor: pointer;
-    }
-    
-    .mode-container:hover{
-        background: rgba(191, 189, 253, 0.5);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(4px);
-    }
-
-    
-    
-    
-    
-    .mode-container img{
-        width: 100%;
-        height:150px;
-    }
-
-    .start-game-btn{
-        right:20px;
-        height: 50px;
-        width: 170px;
-        font-size: 25px;
-
-    }
-
-    
-    #chooseCategory{
-        width: 200px;
         font-size: 20px;
-        font-family:'Goldman';
-        color:#645EFE;
+        padding:1%;
+        margin:10px;
     }
+
+    
 }
 
 
-@media only screen and (max-width:425px){
+
+@media only screen and (max-width:600px){
+
+    .mode-container img{
+        height:130px;
+    }
 
     .mode-container p{
         font-size: 15px;
@@ -273,28 +225,24 @@ body {
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
-        
+
         color: #FFFFFF;
         text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
 
 
     .button-container button{
-
         font-size: 15px;
         padding:1%;
         margin:10px;
     }
 
-    .start-game-btn{
-        height: 50px;
-        width: 170px;
-        font-size: 25px;
-
+    #chooseCategory{
+        width: 200px;
+        font-size: 20px;
+        font-family:'Goldman';
+        color:#645EFE;
     }
-
     
     
 }
-
-
