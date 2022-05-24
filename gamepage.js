@@ -28,9 +28,14 @@ function randomWord() {
     // alert(answer);
 }
 
-
+// #idk
 function handleGuess(chosenLetter){
-    guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
+    guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null 
+    // var but = document.getElementsByClassName('letter').style.background = "green";
+    // for(var i = 0; i < but.length; i++){
+	// 	but[i].style.backgroundColor = "white";
+	// }
+
     document.getElementById(chosenLetter).setAttribute('disabled', true);
 }
 
