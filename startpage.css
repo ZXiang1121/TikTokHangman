@@ -137,12 +137,13 @@ body {
     /* Note: backdrop-filter has minimal browser support */
     border:none;
     border-radius: 10px;
-
+    text-decoration: none;
     font-family: 'Goldman';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     padding:10px;
+    text-align: center;
 
     cursor: pointer;
     color: #FFFFFF;
