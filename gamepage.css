@@ -61,16 +61,7 @@
         background-size: cover;
     }
 
-    .main-container {
-        /* height: 60vh; */
-    }
-
     h1.title {
-        /* position: absolute;
-      width: 997px;
-      height: 115px;
-      left: 71px;
-      top: 58px; */
 
         font-family: 'Goldman';
         font-style: normal;
@@ -113,14 +104,18 @@
     }
 
     .hangman{
-        background-image: url(Images/Hangman/hangman1.png);
+        /* background-image: url(Images/Hangman/hangman1.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
-        background-size: cover;
+        background-size: cover; */
 
         width: 350px;
         height: 350px;        
+    }
+    button.letter:disabled {
+        pointer-events: none;
+        opacity: 0.5;
     }
 }
 
@@ -201,14 +196,19 @@
     }
 
     .hangman{
-        background-image: url(Images/Hangman/hangman1.png);
+        /* background-image: url(Images/Hangman/hangman1.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
-        background-size: cover;
+        background-size: cover; */
 
         width: 350px;
         height: 350px;        
+    }
+
+    button.letter:disabled {
+        pointer-events: none;
+        opacity: 0.5;
     }
 }
 
@@ -288,11 +288,11 @@
     }
 
     .hangman{
-        background-image: url(Images/Hangman/hangman1.png);
+        /* background-image: url(Images/Hangman/hangman1.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
-        background-size: cover;
+        background-size: cover; */
 
         width: 150px;
         height: 150px;        

@@ -14,46 +14,46 @@
 
     <h1 class="title">The Hangman game</h1>
 
-    <div class="word-to-guess-container"></div>
-    <div class="word-tries-remaining">Tries Left:</div>
+    <div class="word-to-guess-container">____</div>
+    <div class="word-tries-remaining">Tries Left: <span id="tries-remaining">6</span> </div>
 
     <div class="hangman-container">
-        <div class="hangman"></div>
+        <img src="Images/Hangman/hangman1.png" class="hangman" id="hangman-image"></img>
     </div>
     <input type="text" class="input-box" placeholder="Enter the Letter You Want">
 
     <div class="alphabet-container">
         <div class="letters-row">
-            <button class="letter" onclick="handleGuess('Q')">Q</button>
-            <button class="letter" onclick="handleGuess('W')">W</button>
-            <button class="letter" onclick="handleGuess('E')">E</button>
-            <button class="letter" onclick="handleGuess('R')">R</button>
-            <button class="letter" onclick="handleGuess('T')">T</button>
-            <button class="letter" onclick="handleGuess('Y')">Y</button>
-            <button class="letter" onclick="handleGuess('U')">U</button>
-            <button class="letter" onclick="handleGuess('I')">I</button>
-            <button class="letter" onclick="handleGuess('O')">O</button>
-            <button class="letter" onclick="handleGuess('P')">P</button>
+            <button class="letter" id="letter_Q" type="button" onclick="handleGuess('Q')">Q</button>
+            <button class="letter" id="letter_W" type="button" onclick="handleGuess('W')">W</button>
+            <button class="letter" id="letter_E" type="button" onclick="handleGuess('E')">E</button>
+            <button class="letter" id="letter_R" type="button" onclick="handleGuess('R')">R</button>
+            <button class="letter" id="letter_T" type="button" onclick="handleGuess('T')">T</button>
+            <button class="letter" id="letter_Y" type="button" onclick="handleGuess('Y')">Y</button>
+            <button class="letter" id="letter_U" type="button" onclick="handleGuess('U')">U</button>
+            <button class="letter" id="letter_I" type="button" onclick="handleGuess('I')">I</button>
+            <button class="letter" id="letter_O" type="button" onclick="handleGuess('O')">O</button>
+            <button class="letter" id="letter_P" type="button" onclick="handleGuess('P')">P</button>
         </div>
         <div class="letters-row">
-            <button class="letter" onclick="handleGuess('A')">A</button>
-            <button class="letter" onclick="handleGuess('S')">S</button>
-            <button class="letter" onclick="handleGuess('D')">D</button>
-            <button class="letter" onclick="handleGuess('F')">F</button>
-            <button class="letter" onclick="handleGuess('G')">G</button>
-            <button class="letter" onclick="handleGuess('H')">H</button>
-            <button class="letter" onclick="handleGuess('J')">J</button>
-            <button class="letter" onclick="handleGuess('K')">K</button>
-            <button class="letter" onclick="handleGuess('L')">L</button>
+            <button class="letter" id="letter_A" type="button" onclick="handleGuess('A')">A</button>
+            <button class="letter" id="letter_S" type="button" onclick="handleGuess('S')">S</button>
+            <button class="letter" id="letter_D" type="button" onclick="handleGuess('D')">D</button>
+            <button class="letter" id="letter_F" type="button" onclick="handleGuess('F')">F</button>
+            <button class="letter" id="letter_G" type="button" onclick="handleGuess('G')">G</button>
+            <button class="letter" id="letter_H" type="button" onclick="handleGuess('H')">H</button>
+            <button class="letter" id="letter_J" type="button" onclick="handleGuess('J')">J</button>
+            <button class="letter" id="letter_K" type="button" onclick="handleGuess('K')">K</button>
+            <button class="letter" id="letter_L" type="button" onclick="handleGuess('L')">L</button>
         </div>
         <div class="letters-row">
-            <button class="letter" onclick="handleGuess('Z')">Z</button>
-            <button class="letter" onclick="handleGuess('X')">X</button>
-            <button class="letter" onclick="handleGuess('C')">C</button>
-            <button class="letter" onclick="handleGuess('V')">V</button>
-            <button class="letter" onclick="handleGuess('B')">B</button>
-            <button class="letter" onclick="handleGuess('N')">N</button>
-            <button class="letter" onclick="handleGuess('M')">M</button>
+            <button class="letter" id="letter_Z" type="button" onclick="handleGuess('Z')">Z</button>
+            <button class="letter" id="letter_X" type="button" onclick="handleGuess('X')">X</button>
+            <button class="letter" id="letter_C" type="button" onclick="handleGuess('C')">C</button>
+            <button class="letter" id="letter_V" type="button" onclick="handleGuess('V')">V</button>
+            <button class="letter" id="letter_B" type="button" onclick="handleGuess('B')">B</button>
+            <button class="letter" id="letter_N" type="button" onclick="handleGuess('N')">N</button>
+            <button class="letter" id="letter_M" type="button" onclick="handleGuess('M')">M</button>
         </div>
     </div>
 </body>
