@@ -26,6 +26,8 @@
 
 8. "Note!!!" You have only 6 lives!
 
+### "Note!!!" If you are in mobile size, you have to enter alphabet one by one into the input field.
+
 9. Any wrong letter chosen => -1 live! && the key selected before will not be able to select again, it color will be lighten.
 
 10. Only the correct selection will appear on the line.
