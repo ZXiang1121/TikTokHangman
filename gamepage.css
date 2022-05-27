@@ -197,7 +197,7 @@
 
     .word-to-guess-container {
         position: absolute;
-        bottom: 50%;
+        bottom: 40%;
         left: 50%;
         transform: translateX(-50%);
         letter-spacing: 1ch;
