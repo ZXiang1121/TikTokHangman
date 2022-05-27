@@ -18,7 +18,7 @@
 
 ### "Note!!!" Gaming mode of "Multi-player" is not working yet at the current stage. We are looking for ways to implement it in the future.
 
-5. Choose the topic you want under categories session. Default would be "Animals". Five topics are provided
+5. Choose the topic you want under categories session. Default would be "Animals". Five topics are provided.
 
 6. After selecting you preference category, click the "Start Game" button.
 
