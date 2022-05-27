@@ -8,7 +8,8 @@
 
 ## Steps to play the game:
 
-1. Download Zipped folder from github. Or open with https://zxiang1121.github.io/TikTokHangman/startpage.html .
+
+1. Download zipped folder from github, or alternatively visit https://zxiang1121.github.io/TikTokHangman/startpage.html
 
 2. Extract the zipped file and open it.
 
