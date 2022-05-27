@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100vh;
+        }
+
+        button#newgame {
+            background: rgba(191, 189, 253, 0.5);
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+            backdrop-filter: blur(4px);
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Goldman';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            color: #FFFFFF;
+            margin-top: 2rem;
+        }
+        button#newgame:hover{
+            outline: 2px solid white;
+            transition: color 0.5s;
+            color: #645EFE;
+        }
+
+        /* Background */
+        @media (min-width:1024px) and (max-width:1920px) {
+            body {
+                height: 100vh;
+                background-image: url(Images/Horizontal-Background.png);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+                background-size: cover;
+            }
+        }
+
+        @media (min-width:601px) and (max-width:1024px) {
+            body {
+                height: 100vh;
+                background-image: url(Images/Vertical-Background.png);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+                background-size: cover;
+            }
+        }
+
+        @media (min-width:360px) and (max-width:414px) {
+            body {
+                height: 100vh;
+                background-image: url(Images/Vertical-Background.png);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+
+<body style="flex-direction: column;display: flex;">
+    <h1 id="logo"><img src="Images/Logo-Inline.png" alt="Logo" style="width: fit-content; max-width: 100%;"></h1>
+    <main style="display: flex;flex-direction: column;justify-content: center;align-items: center;height: inherit;width: inherit;">
+
+        <p id="result" style="
+        font-size: 4rem;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+        color: white;">You won!</p>
+
+        <p id="answer" style="
+        font-size: 1.4rem;
+        font-family: Verdana, sans-serif;
+        color: white;
+        display: none;">lol</p>
+
+        <button id="newgame" type="button" onclick="newGame()">New Game</button>
+    </main>
+
+    <script src="endpage.js"></script>
+</body>
+
+</html>
