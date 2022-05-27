@@ -39,9 +39,11 @@ body {
 }
 
 
+
 .select-mode{
     display:flex;
     gap: 10%;
+    width: 100%; 
 }
 
 .labelled{
@@ -119,14 +121,14 @@ body {
     background: rgba(100, 94, 254, 0.5);
     border-radius: 10px;
     border:none;
-    font-size: 30px;
+    font-size: 25px;
     padding:1%;
     margin:10px;
-
-    font-family: 'Comic Neue';
+    font-family: 'goldman';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+
+
     line-height: 35px;
     cursor: pointer;
     color: #FFFFFF;
@@ -259,7 +261,7 @@ body {
         width: 200px;
         font-size: 20px;
         font-family:'Goldman';
-        color:#645EFE;
+
     }
     
     
