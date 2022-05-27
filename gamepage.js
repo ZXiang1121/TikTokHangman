@@ -20,7 +20,10 @@ function randomWord() {
 
 function handleGuess(chosenLetter){
     
-    if (guessed.indexOf(chosenLetter) === -1) guessed.push(chosenLetter)
+    if (guessed.indexOf(chosenLetter) === -1) {
+        guessed.push(chosenLetter);
+        mistakes++;
+    }
 
     document.getElementById(`letter_${chosenLetter}`).setAttribute('disabled', true);
 
@@ -30,7 +33,7 @@ function handleGuess(chosenLetter){
             window.location.replace("endpage.html?result=won");
         }
     } else if (answer.indexOf(chosenLetter) === -1) {
-        mistakes++;
+        
         document.getElementById('tries-remaining').innerHTML = maxWrong - mistakes;
         
         if (mistakes === maxWrong) { // game over, loser
@@ -51,4 +54,8 @@ guessedWord();
 
 window.addEventListener("keydown", e => {
     handleGuess(e.key.toUpperCase());
+})
+
+document.getElementById('input-box').addEventListener('input', e => {
+    handleGuess(e.target.value[e.target.value.length -1].toUpperCase());
 })
