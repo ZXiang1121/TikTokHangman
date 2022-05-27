@@ -1,18 +1,19 @@
 # Guidelines on playing the Hangman Game
 
-## In this folder, it consist the following files: (Note that not all files are used)
-    - 4 html files "startpage.html", "gamepage.html", "endpage.html", "index.html"
+## In this folder, it consist files as following: (Note that not all files are used)
+    - 3 html files "startpage.html", "gamepage.html", "endpage.html".
     - 3 css files "startpage.css", "gamepage.css", "endpage.css".
     - 3 js files "startpage.js", "gamepage.js", "endpage.js".
     - Images => Folder that contain all the images.
 
 ## Steps to play the game:
 
+
 1. Download zipped folder from github, or alternatively visit https://zxiang1121.github.io/TikTokHangman/startpage.html
 
 2. Extract the zipped file and open it.
 
-3. Open the "startgame.html" or "index.html" HTML file. Default for this project we used "Google Chrome".
+3. Open the "startgame.html" HTML file. Default for this project we uses "Google Chrome".
 
 4. Now you will see the first page, which allow you to choose "single" or "multiplayer". As well as choosing the topic.
 
@@ -37,7 +38,7 @@
 
 12. Press the "New Game" button to bring you back to the "startpage.html". Repeat step 5-11 if you are playing again. :)
 
-## Enjoy the game and have fun!
+## Enjoy you game and have fun!
 ## Presented to TikTok Youth Camp
 
 
