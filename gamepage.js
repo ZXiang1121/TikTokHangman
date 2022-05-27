@@ -69,5 +69,5 @@ window.addEventListener("keydown", e => {
 })
 
 document.getElementById('input-box').addEventListener('input', e => {
-    handleGuess(e.target.value[e.target.value.length -1].toUpperCase());
+    handleGuess(e.target.value[e.target.value.length-1].toUpperCase());
 })

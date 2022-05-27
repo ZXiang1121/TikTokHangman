@@ -8,7 +8,10 @@
 
 ## Steps to play the game:
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59ef7c0b88377df2cbf876ab732a052701122db2
 1. Download zipped folder from github, or alternatively visit https://zxiang1121.github.io/TikTokHangman/startpage.html
 
 2. Extract the zipped file and open it.
@@ -40,5 +43,3 @@
 
 ## Enjoy you game and have fun!
 ## Presented to TikTok Youth Camp
-
-
