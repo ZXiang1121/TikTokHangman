@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Hangman Game
 
 You can use the [editor on GitHub](https://github.com/ZXiang1121/TikTokHangman/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
