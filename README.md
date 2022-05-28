@@ -8,10 +8,6 @@
 
 ## Steps to play the game:
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 59ef7c0b88377df2cbf876ab732a052701122db2
 1. Download zipped folder from github, or alternatively visit https://zxiang1121.github.io/TikTokHangman/startpage.html
 
 2. Extract the zipped file and open it.
@@ -36,7 +32,7 @@
 
 10. Only the correct selection will appear on the line.
 
-11. if (you got it correct){you will be prompt to the "endpage.html", and show that you have won!};
+11. If (you got it correct){you will be prompt to the "endpage.html", and show that you have won!};
     else {you lose!};
 
 12. Press the "New Game" button to bring you back to the "startpage.html". Repeat step 5-11 if you are playing again. :)
